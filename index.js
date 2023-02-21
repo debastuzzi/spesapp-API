@@ -15,7 +15,7 @@ db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("MONGO CONNECTION OPEN"))
 
 app.use(express.json());
-app.use(cors());
+
 
 
 app.use("/api/list", ListRouter)
